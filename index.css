@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+section {
+	height: 100vh;
+}
+
+
+/*----------------Navbar--------------*/
+.navbar {
+	background: linear-gradient(-35deg, #2f21ad, #e04b9c, #7f34a4);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-weight: 600;
+	text-shadow: 2px 2px 4px #000000;
+	margin: 0;
+}
+
+.nav-link {
+	position: relative;
+	font-weight: 500;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.nav-link:hover::after{
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 0.10rem;
+  left: 20%;
+  top: 2rem;
+  background-color: #8a49ff;
+}
+
+.active::after{
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 0.10rem;
+  left: 20%;
+  top: 2rem;
+  background-color: #8a49ff;
+}
+/*----------------End of Navbar--------------*/
+
+/*----------------Home Page--------------*/
+
+#home-text {
+	padding-top: 8rem;
+}
+
+.home-img {
+	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+	padding: 0;
+}
+
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+h1 > span {
+	color: #8a49ff;
+}
+
+h1 ~ p {
+	text-align: left;
+}
+
+.fa-icons {
+	font-size: 2rem;
+	color: #0E2431;
+}
+
+.fa-icons:hover {
+	font-size: 2rem;
+	color: #8a49ff;
+}
+
+
