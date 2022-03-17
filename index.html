@@ -20,7 +20,7 @@
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav ml-auto">
+	      <ul class="navbar-nav ml-auto text-right">
 	        <li class="nav-item">
 	          <a class="nav-link" aria-current="page" href="#home">Home</a>
 	        </li>
@@ -40,7 +40,7 @@
 	<!-- End of Bootstrap Navbar -->
 
 	<!-- Home Section -->
-	<section class="container-fluid" id="home">
+	<section class="container-fluid overflow-hidden" id="home">
 		<div class="row align-items-center justify-content-center" id="home-data">
 			<div class="col-11 col-md-5 text-center text-white order-2 order-md-1 home-text">
 				<h1>
@@ -58,12 +58,16 @@
 				<img src="./images/profile2.png" class="col-7 col-md-8 rounded-circle home-img">
 			</div>
 		</div>
+		<div class="home-btn">
+			<a href="#" class="cv-btn">View CV</a>
+			<a href="#contact" class="contact-btn">Contact Me</a>
+		</div>
 	</section>
 	<!-- End Of Home Section -->
 
 	<!-- Project Section -->
 	<section class="container" id="projects">
-		<h1 class="text-center mt-5 mb-4">Projects</h1>
+		<h1 class="text-center mt-5 mb-3">Projects</h1>
 		<div class="card-deck text-center mx-auto">
 			<!-- Bootstrap Cards -->
 			<div class="row d-flex justify-content-center align-items-center">
@@ -98,31 +102,31 @@
 	<!-- End of Project Section -->
 
 	<!-- Tools Section -->
-	<section class="container-fluid" id="tools">
-		<h1 class="text-center text-white pt-5">Tools</h1>
-		<h3 class="text-center text-white mb-3">Core Tools</h3>
-		<div class="d-flex flex-row justify-content-center mb-1">
-			<img src="./images/logo-html5.png" class="tools-img img-fluid">
-			<img src="./images/logo-css3.png"  class="tools-img">
-			<img src="./images/logo-javascript.png" class="tools-img">
-		</div>
-		<h3 class="text-center text-white mb-2">Other Tools</h3>
-		<div class="d-flex flex-row justify-content-center flex-wrap mb-1">
-			<img src="./images/logo-mongodb.png" class="tools-img">
-			<img src="./images/logo-nodejs.png" class="tools-img">
-			<img src="./images/logo-expressjs.png" class="tools-img">
-			<img src="./images/logo-react.png" class="tools-img">
-			<img src="./images/logo-heroku.png" class="tools-img">
-			<img src="./images/logo-git.png" class="tools-img">
-			<img src="./images/logo-sublime-text-3.png" class="tools-img">
-			<img src="./images/logo-postman.png" class="tools-img">
-			<img src="./images/logo-gitlab-ci-cd.png" class="tools-img">
+	<section class="container-fluid overflow-hidden" id="tools">
+		<h1 class="text-center text-white pt-5 mb-3">Tools</h1>
+		<div class="d-flex flex-row justify-content-center align-items-start flex-wrap">
+			<div class="col-12 col-md-10 col-lg-7 my-5 text-center tools-item">
+				<img src="./images/logo-html5.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-css3.png"  class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-javascript.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-mongodb.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-nodejs.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-expressjs.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-react.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-heroku.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-git.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-sublime-text-3.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-postman.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-rest.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-bootstrap.png" class="tools-img img-fluid shadow rounded-circle">
+				<img src="./images/logo-github.png" class="tools-img img-fluid shadow rounded-circle">
+			</div>
 		</div>
 	</section>
 	<!-- End of Tools Section -->
 
 	<!-- Contact Section -->
-	<section class="container-fluid">
+	<section class="container overflow-hidden">
 	 	<div class="row my-5" id="contact">
 	 		<div class="col-12 col-md-6 mb-3">
  				<h3 class="text-center">Visit!</h3>
@@ -131,7 +135,7 @@
 	 		<div class="col-12 col-md-6">
 				<h3 class="text-center">Contact Me!</h3>
 	 			<form class="row g-3">
-	 			  <div class="col-md-6 mb-3">
+	 			  <div class="col-md-6 mb-4">
 	 			    <label for="inputName" class="form-label">Name</label>
 	 			    <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Full Name">
 	 			  </div>
@@ -139,7 +143,7 @@
 	 			    <label for="inputEmail4" class="form-label">Email</label>
 	 			    <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
 	 			  </div>
-	 			  <div class="col-12 mb-3">
+	 			  <div class="col-12 mb-4">
 	 			    <label for="txt-message" class="form-label">Message</label>
 	 			    <textarea class="form-control" id="txt-message" rows="3"></textarea>
 	 			  </div>
@@ -147,7 +151,7 @@
 	 			    <button type="submit" class="btn btn-block">Submit</button>
 	 			  </div>
 	 			</form>
- 				<div class="d-flex justify-content-start align-items-start">
+ 				<div class="d-flex justify-content-center align-items-center mt-2">
  				<a href="https://www.facebook.com/micol.pableo/" target="_blank" class="text-dark m-3">
  					<i class="fa-brands fa-facebook fa-icons"></i>
  				</a>
@@ -164,7 +168,7 @@
 	<!-- End of Contact Section -->
 
 	<!-- Footer -->
-	<footer class="p-3 mt-5">
+	<footer class="p-3 mt-4">
 		<p class="text-center text-white">Micol Pableo</p>
 		<p class="text-center text-white">
 			&#169;All Rights Reserved 2022

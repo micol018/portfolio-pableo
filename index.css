@@ -7,7 +7,15 @@ body {
 
 /*----------------Navbar--------------*/
 nav {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), right bottom;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), right bottom;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.nav-link:hover {
+	color: #8a49ff !important;
 }
 
 /*----------------Home Section--------------*/
@@ -15,12 +23,11 @@ nav {
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('./images/bg.jpg') right bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-top: 5rem;
-	height: 100vh;
+	padding: 10rem 0;
 }
 
 .home-text {
-	background-color: rgba(255, 255, 255, .20);
+	background-color: rgba(0, 0, 0, .6);
 	border-radius: 30px;
 	padding: 1rem;
 }
@@ -29,6 +36,7 @@ nav {
 	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 	padding: 0;
+	width: 20rem;
 }
 
 
@@ -47,11 +55,43 @@ h1 ~ p {
 	text-align: left;
 }
 
+.home-btn {
+	position: relative;
+	left: 8%;
+	top: 0;
+}
+
+.cv-btn,
+.contact-btn {
+	margin: 0 auto;
+	display: inline-block;
+	padding: 10px 10px;
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	text-decoration: none;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	text-align: center;
+	width: 8rem;
+}
+
+.cv-btn:hover,
+.contact-btn:hover {
+  background: #8a49ff;
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio-btn {
+  margin-right: 30px;
+}
+
+.contact-btn {
+  margin-left: 30px;
+}
 
 /*----------------Projects Section--------------*/
-#projects {
-	height: 100vh;
-}
 
 .card-deck {
 	margin: 8rem 0;
@@ -69,42 +109,105 @@ h1 ~ p {
 
 /*----------------Tools Section--------------*/
 #tools {
-	background: radial-gradient(at left 80%, #2f21ad, #e04b9c, #7f34a4);
-	height: 100vh;
+	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
+}
+
+.tools-item {
+	padding-bottom: 5rem;
 }
 
 .tools-img {
 	width: 6rem;
+	margin: 2rem 0.5rem;
 }
 
 /*----------------Contact Section--------------*/
+#contact h3 {
+	font-weight: 900;
+	margin-bottom: 1.5rem;
+}
 
 #gmap_canvas {
-	height: 60vh;
+	height: 50vh;
 	width: 100%;
 }
 
 .btn {
-	background-color: white;
-	color: #8a49ff;
-	border: 1px solid #8a49ff;
-}
-
-.btn:hover {
 	background-color: #8a49ff;
 	color: white;
 	border: 1px solid #8a49ff;
 }
 
+.btn:hover {
+	background-color: #640eff;
+	color: white;
+	border: 1px solid #640eff;
+}
+
 .fa-icons {
 	font-size: 2rem;
+	color: #8a49ff;
 }
 
 .fa-icons:hover {
-	color: #8a49ff;
+	color: #640eff;
 }
 
 /*----------------Footer Section--------------*/
 footer {
 	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
+}
+
+@media only screen and (max-width: 600px) {
+	#home {
+		padding: 5rem 0 !important;
+	}
+	.home-img {
+		margin-bottom: 1rem;
+	}
+	.home-text h1 {
+		font-size: 2rem;
+	}
+
+	.home-btn {
+		position: relative;
+		left: 1rem;
+	}
+
+	#projects .card-deck {
+		margin-top: 3rem;
+	}
+	#tools h1 {
+		margin-bottom: 0;
+	}
+
+	.tools-item {
+		margin: 0 !important;
+	}
+
+	.tools-img {
+		width: 4rem !important;
+		margin: 1rem 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	#home {
+		padding: 6rem 0;
+	}
+
+	.home-btn {
+		position: relative;
+		top: 1rem;
+	}
+
+	.tools-item {
+		margin: 0 !important;
+	}
+
+	.tools-img {
+		margin-left: 1rem;
+		width: 5rem;
+	}
 }
