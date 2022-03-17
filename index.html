@@ -12,174 +12,167 @@
 	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-		<a class="navbar-brand" href="#">Micol</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarSupportedContent">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarmenu">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link active" href="#home">Home</a>
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#tools">Tools</a>
-				</li>
-				<li class="nav-item px-3">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
+	<!-- Bootstrap Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Micol Pableo</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="#home">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#projects">Projects</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#tools">Tools</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#contact">Contact</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
-	<!-- End of Navbar -->
-	<div class="container ">
-		<section id="home">
-			<div class="row align-items-center" id="home-text">
-				<div class="col-12 col-md-6 text-center order-2 order-md-1">
-					<h1 class="home-title">
-						Hi,
-						<div></div>
-						I am <span class="home-name">Micol</span>
-						<div></div>
-						Full Stack Developer
-					</h1>
-					<p>
-						I design and develop dynamic websites for businesses and help them do better online.
-					</p>
-				</div>
-				<div class="col-12 col-md-6 text-center order-1 order-md-2 ">
-					<img src="./images/profile2.png" class="col-7 col-md-8 rounded-circle mx-auto home-img">
-				</div>
-			</div>
-			<div class="d-flex justify-content-start mt-5">
-				<a href="https://facebook.com" target="_blank" class="text-white mx-2">
-					<i class="fa-brands fa-facebook fa-icons"></i>
-				</a>
-				<a href="https://instagram.com" target="_blank" class="text-white mx-2">
-					<i class="fa-brands fa-instagram fa-icons"></i>
-				</a>
-				<a href="https://linkedin.com" target="_blank" class="text-white mx-2">
-					<i class="fa-brands fa-linkedin-in fa-icons"></i>
-				</a>
-			</div>
-		</section>
-		
-		<section id="skills">
-			<h1 class="text-center my-5">Skills</h1>
-			<div class="card-deck text-center mx-auto">
-			  <div class="card">
-			    <img src="https://www.datocms-assets.com/14946/1590690690-front-end.jpg" class="card-img-top" alt="...">
-			    <div class="card-body">
-			      <h5 class="card-title">Front-End Development</h5>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img src="https://codecondo.com/wp-content/uploads/2017/09/What-is-back-end-development.jpg" class="card-img-top" alt="...">
-			    <div class="card-body">
-			      <h5 class="card-title">Back-End Development</h5>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img src="https://i.ytimg.com/vi/UoCnsh6x2ls/maxresdefault.jpg" class="card-img-top" alt="...">
-			    <div class="card-body">
-			      <h5 class="card-title">Full-Stack Development</h5>
-			    </div>
-			  </div>
-			</div>
-		</section>
-		<div class="container-fluid mt-5" id="projects">
-		 	<h3 class="text-center my-4">Projects</h3>
-		 	<div class="row my-2">
-		 		<div class="col-12 col-md-6 order-2 order-md-1 p-3">
-		 			
-		 		</div>
-		 		<div class="col-12 col-md-6 order-1 order-md-2 p-3">
-		 			
-		 		</div>
-		 	</div>
-		 	<div class="row my-2">
-		 		<div class="col-12 col-md-6 order-2 order-md-2 p-3">
-		 			
-		 		</div>
-		 		<div class="col-12 col-md-6 order-1 order-md-1 p-3">
-		 			
-		 		</div>
-		 	</div>
+	<!-- End of Bootstrap Navbar -->
 
-		 	<div id="tools">
-		 		<h2 class="text-center my-4">Tools</h2>
-		 		<h3 class="text-center mb-2">Core Tools</h3>
-		 		<div class="d-flex flex-row justify-content-center mb-3">
-		 			<img src="./images/logo-html5.png" style="width: 80px;">
-		 		</div>
-		 		<div class="d-flex flex-row justify-content-center mb-3">
-		 			<img src="./images/logo-css3.png" style="width: 80px;">
-		 			<img src="./images/logo-javascript.png" style="width: 80px;">
-		 		</div>
-		 		<h3 class="text-center mb-2">Other Tools</h3>
-		 		<div class="d-flex flex-row justify-content-center flex-wrap mb-3">
-		 			<img src="./images/logo-mongodb.png" style="width: 80px;">
-		 			<img src="./images/logo-nodejs.png" style="width: 80px;">
-		 			<img src="./images/logo-expressjs.png" style="width: 80px;">
-		 			<img src="./images/logo-react.png" style="width: 80px;">
-		 			<img src="./images/logo-heroku.png" style="width: 80px;">
-		 			<img src="./images/logo-git.png" style="width: 80px;">
-		 			<img src="./images/logo-sublime-text-3.png" style="width: 80px;">
-		 			<img src="./images/logo-postman.png" style="width: 80px;">
-		 			<img src="./images/logo-gitlab-ci-cd.png" style="width: 80px;">
-		 		</div>
-		 	</div>
-
-		 	
-		 	<div class="row my-5" id="contact">
-		 		<div class="col-12 col-md-6 mb-3">
-	 				<h3 class="text-center">Visit Us!</h3>
-					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sm%20mall%20of%20asia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-				</div>
-		 		<div class="col-12 col-md-6">
-					<h3 class="text-center">Contact Us!</h3>
-		 			<form>
-		 				<div class="form-group">
-		 					<label for="txt-username">Name:</label>
-		 					<input type="text" name="name" id="txt-username" placeholder="Enter Full Name" class="form-control">
-		 				</div>
-		 				<div class="form-group">
-		 					<label for="txt-email">Email:</label>
-		 					<input type="email" name="email" id="txt-email" placeholder="name@example.com" class="form-control">
-		 				</div>
-		 				<div class="form-group">
-		 					<label for="txt-message">Message:</label>
-		 					<textarea class="form-control" id="txt-message" rows="3"></textarea>
-		 				</div>
-		 				<button type="submit" class="btn btn-block btn-success">Submit</button>
-		 			</form>
-		 		</div>
-		 	</div>
+	<!-- Home Section -->
+	<section class="container-fluid" id="home">
+		<div class="row align-items-center justify-content-center" id="home-data">
+			<div class="col-11 col-md-5 text-center text-white order-2 order-md-1 home-text">
+				<h1>
+					Hi,
+					<div></div>
+					I am <span class="home-name">Micol</span>
+					<div></div>
+					Full Stack Developer
+				</h1>
+				<p>
+					I design and develop dynamic websites for businesses and help them do better online.
+				</p>
+			</div>
+			<div class="col-12 col-md-5 text-center order-1 order-md-2">
+				<img src="./images/profile2.png" class="col-7 col-md-8 rounded-circle home-img">
+			</div>
 		</div>
-	</div>
+	</section>
+	<!-- End Of Home Section -->
+
+	<!-- Project Section -->
+	<section class="container" id="projects">
+		<h1 class="text-center mt-5 mb-4">Projects</h1>
+		<div class="card-deck text-center mx-auto">
+			<!-- Bootstrap Cards -->
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="col-6 card shadow mb-3">
+				  <img src="./images/proj1.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h6 class="card-title">Product Website</h6>
+				  </div>
+				</div>
+				<div class="col-6 card shadow mb-3">
+				  <img src="./images/proj2.jpg" alt="...">
+				  <div class="card-body">
+				    <h6 class="card-title">Business Website</h6>
+				  </div>
+				</div>
+				<div class="col-6 card shadow mb-3">
+				  <img src="./images/proj3.jpg" alt="...">
+				  <div class="card-body">
+				    <h6 class="card-title">Travel Website</h6>
+				  </div>
+				</div>
+				<div class="col-6 card shadow mb-3">
+				  <img src="./images/proj4.png" alt="...">
+				  <div class="card-body">
+				    <h6 class="card-title">Portfolio Website</h6>
+				  </div>
+				</div>
+			</div>
+			<!-- End Bootstrap Cards -->
+		</div>
+	</section>
+	<!-- End of Project Section -->
+
+	<!-- Tools Section -->
+	<section class="container-fluid" id="tools">
+		<h1 class="text-center text-white pt-5">Tools</h1>
+		<h3 class="text-center text-white mb-3">Core Tools</h3>
+		<div class="d-flex flex-row justify-content-center mb-1">
+			<img src="./images/logo-html5.png" class="tools-img img-fluid">
+			<img src="./images/logo-css3.png"  class="tools-img">
+			<img src="./images/logo-javascript.png" class="tools-img">
+		</div>
+		<h3 class="text-center text-white mb-2">Other Tools</h3>
+		<div class="d-flex flex-row justify-content-center flex-wrap mb-1">
+			<img src="./images/logo-mongodb.png" class="tools-img">
+			<img src="./images/logo-nodejs.png" class="tools-img">
+			<img src="./images/logo-expressjs.png" class="tools-img">
+			<img src="./images/logo-react.png" class="tools-img">
+			<img src="./images/logo-heroku.png" class="tools-img">
+			<img src="./images/logo-git.png" class="tools-img">
+			<img src="./images/logo-sublime-text-3.png" class="tools-img">
+			<img src="./images/logo-postman.png" class="tools-img">
+			<img src="./images/logo-gitlab-ci-cd.png" class="tools-img">
+		</div>
+	</section>
+	<!-- End of Tools Section -->
+
+	<!-- Contact Section -->
+	<section class="container-fluid">
+	 	<div class="row my-5" id="contact">
+	 		<div class="col-12 col-md-6 mb-3">
+ 				<h3 class="text-center">Visit!</h3>
+				<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sm%20mall%20of%20asia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+	 		<div class="col-12 col-md-6">
+				<h3 class="text-center">Contact Me!</h3>
+	 			<form class="row g-3">
+	 			  <div class="col-md-6 mb-3">
+	 			    <label for="inputName" class="form-label">Name</label>
+	 			    <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Full Name">
+	 			  </div>
+	 			  <div class="col-md-6">
+	 			    <label for="inputEmail4" class="form-label">Email</label>
+	 			    <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
+	 			  </div>
+	 			  <div class="col-12 mb-3">
+	 			    <label for="txt-message" class="form-label">Message</label>
+	 			    <textarea class="form-control" id="txt-message" rows="3"></textarea>
+	 			  </div>
+	 			  <div class="col-12">
+	 			    <button type="submit" class="btn btn-block">Submit</button>
+	 			  </div>
+	 			</form>
+ 				<div class="d-flex justify-content-start align-items-start">
+ 				<a href="https://www.facebook.com/micol.pableo/" target="_blank" class="text-dark m-3">
+ 					<i class="fa-brands fa-facebook fa-icons"></i>
+ 				</a>
+ 				<a href="https://www.instagram.com/micolannepableo/" target="_blank" class="text-dark m-3">
+ 					<i class="fa-brands fa-instagram fa-icons"></i>
+ 				</a>
+ 				<a href="https://www.linkedin.com/in/micol-pableo-341909224/" target="_blank" class="text-dark m-3">
+ 					<i class="fa-brands fa-linkedin-in fa-icons"></i>
+ 				</a>
+ 				</div>
+	 		</div>
+	 	</div>
+	</section>
+	<!-- End of Contact Section -->
+
 	<!-- Footer -->
-	<footer class="p-3 bg-primary mt-5 bg-dark">
+	<footer class="p-3 mt-5">
 		<p class="text-center text-white">Micol Pableo</p>
-		<div class="d-flex justify-content-center px-5 mb-3">
-			<a href="https://facebook.com" target="_blank" class="text-white mx-2">
-				<i class="fa-brands fa-facebook fa-icons"></i>
-			</a>
-			<a href="https://instagram.com" target="_blank" class="text-white mx-2">
-				<i class="fa-brands fa-instagram fa-icons"></i>
-			</a>
-		</div>
 		<p class="text-center text-white">
 			&#169;All Rights Reserved 2022
 		</p>
 	</footer>
 	<!-- End of Footer -->
 
-
-
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
