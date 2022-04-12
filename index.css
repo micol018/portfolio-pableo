@@ -169,9 +169,9 @@ h1 ~ p {
 .tools-img {
 	width: 6rem;
 	margin: 0.5rem 0.3rem;
-	/*filter: grayscale(100%) brightness(55%) sepia(50%) hue-rotate(-120deg) saturate(500%) contrast(1);*/
+	filter: grayscale(100%) brightness(55%) sepia(50%) hue-rotate(-120deg) saturate(500%) contrast(1);
 }
-/*
+
 .tools-1 {
 	filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-120deg) saturate(500%) contrast(1);
 }
@@ -179,7 +179,10 @@ h1 ~ p {
 .tools-2 {
 	filter: invert(30%) sepia(66%) saturate(1376%) hue-rotate(265deg) brightness(60%) contrast(90%);
 }
-*/
+
+.tools-img:hover {
+	filter: none;
+}
 
 
 /*----------------Projects Section--------------*/
