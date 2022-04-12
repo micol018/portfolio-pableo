@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+html {
+	-webkit-scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	background: #32243d;
+	animation: move 1s linear infinite forwards;
 }
 
 /*----------------Navbar--------------*/
@@ -27,8 +32,8 @@ nav {
 }
 
 .home-text {
-	background-color: rgba(0, 0, 0, .6);
-	border-radius: 30px;
+	/*background-color: rgba(0, 0, 0, .6);
+	border-radius: 30px;*/
 	padding: 1rem;
 }
 
@@ -67,19 +72,23 @@ h1 ~ p {
 	display: inline-block;
 	padding: 10px 10px;
 	border: 1px solid white;
-	background: transparent;
 	color: white;
-	text-decoration: none;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
 	text-align: center;
 	width: 8rem;
+	text-decoration: none;
+	background-image: linear-gradient(white, white);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-position-x: right;
+	-webkit-transition: background-size 500ms;
+	transition: background-size 500ms;
 }
 
 .cv-btn:hover,
 .contact-btn:hover {
-  background: #8a49ff;
-  color: white;
+  background-size: 100% 100%;
+  background-position-x: left;
+  color: black;
   text-decoration: none;
 }
 
@@ -91,8 +100,92 @@ h1 ~ p {
   margin-left: 30px;
 }
 
-/*----------------Projects Section--------------*/
+/*----------------About Section--------------*/
+#about {
+	background-color: #9d3ba2;
+}
 
+.about-text {
+	margin-top: -70px;
+}
+
+.about-img {
+	height: 20rem;
+}
+
+.about-container {
+	height: 25rem;
+}
+
+.wave-1 {
+    position: relative;
+    bottom: 65px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 65px;
+}
+
+.wave-1 .shape-fill {
+    fill: #9d3ba2;
+}
+
+.wave-2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+}
+
+.wave-2 .shape-fill {
+    fill: #9d3ba2;
+}
+
+/*----------------Tools Section--------------*/
+.tools-stacks {
+	padding-bottom: 5rem;
+}
+.stacks {
+	min-height: 20rem;
+	margin: 0 1rem;
+}
+.tools-img {
+	width: 6rem;
+	margin: 0.5rem 0.3rem;
+	/*filter: grayscale(100%) brightness(55%) sepia(50%) hue-rotate(-120deg) saturate(500%) contrast(1);*/
+}
+/*
+.tools-1 {
+	filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-120deg) saturate(500%) contrast(1);
+}
+
+.tools-2 {
+	filter: invert(30%) sepia(66%) saturate(1376%) hue-rotate(265deg) brightness(60%) contrast(90%);
+}
+*/
+
+
+/*----------------Projects Section--------------*/
+#projects {
+	background-color: #9d3ba2;
+}
 .card-deck {
 	margin: 8rem 0;
 }
@@ -106,19 +199,45 @@ h1 ~ p {
 	transform: translateY(-20px);
 }
 
-
-/*----------------Tools Section--------------*/
-#tools {
-	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
+.wave-3 {
+    position: relative;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-.tools-item {
-	padding-bottom: 5rem;
+.wave-3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 65px;
 }
 
-.tools-img {
-	width: 6rem;
-	margin: 2rem 0.5rem;
+.wave-3 .shape-fill {
+    fill: #9d3ba2;
+}
+
+.wave-4 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-4 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+}
+
+.wave-4 .shape-fill {
+    fill: #9d3ba2;
 }
 
 /*----------------Contact Section--------------*/
@@ -133,15 +252,21 @@ h1 ~ p {
 }
 
 .btn {
-	background-color: #8a49ff;
 	color: white;
-	border: 1px solid #8a49ff;
+	border: 1px solid #fff;
+	background-image: linear-gradient(white, white);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-position-x: right;
+	-webkit-transition: background-size 500ms;
+	transition: background-size 500ms;
 }
 
 .btn:hover {
-	background-color: #640eff;
-	color: white;
-	border: 1px solid #640eff;
+	color: black;
+	border: 1px solid #fff;
+	background-size: 100% 100%;
+	background-position-x: left;
 }
 
 .fa-icons {
@@ -151,6 +276,28 @@ h1 ~ p {
 
 .fa-icons:hover {
 	color: #640eff;
+}
+
+input, textarea {
+	background-color: transparent !important;
+	color: white !important;
+	border: 1px solid #84319B !important;
+}
+
+input[placeholder] {
+	color: white !important;
+}
+
+.btn-submit {
+	color: white;
+	border: 1px solid transparent;
+	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
+}
+
+.btn-submit:hover {
+	color: white;
+	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
+	border: 1px solid white;
 }
 
 /*----------------Footer Section--------------*/
@@ -172,6 +319,15 @@ footer {
 	.home-btn {
 		position: relative;
 		left: 1rem;
+		padding-bottom: 3rem;
+	}
+
+	.about-container {
+		height: 38rem;
+	}
+
+	.tools-stacks {
+		padding: 0.5rem 0;
 	}
 
 	#projects .card-deck {
