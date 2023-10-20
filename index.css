@@ -108,12 +108,8 @@ h1 ~ p {
   text-decoration: none;
 }
 
-.portfolio-btn {
-  margin-right: 30px;
-}
-
 .contact-btn {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 /*----------------About Section--------------*/
