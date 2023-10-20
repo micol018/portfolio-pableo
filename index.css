@@ -26,6 +26,19 @@ nav {
 	color: #8a49ff !important;
 }
 
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-dark .navbar-toggler[aria-expanded=true] {
+	padding: .25rem .25rem !important;
+}
+
+.navbar-dark .navbar-toggler[aria-expanded=false] {
+	border-color: transparent !important;
+	padding: .25rem .25rem !important;
+}
+
 /*----------------Home Section--------------*/
 #home {
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('./images/bg.jpg') right bottom;
@@ -373,10 +386,6 @@ footer {
 		margin: 0 !important;
 	}
 
-	.tools-img {
-		width: 4rem !important;
-		margin: 1rem 0;
-	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -395,7 +404,6 @@ footer {
 	}
 
 	.tools-img {
-		margin-left: 1rem;
 		width: 5rem;
 	}
 }
