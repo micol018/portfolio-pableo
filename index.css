@@ -2,6 +2,7 @@
 
 html {
 	-webkit-scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
 /*----------------Navbar--------------*/
 nav {
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), right bottom;
+	-webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 }
 
 .nav-link {
@@ -162,13 +165,18 @@ h1 ~ p {
 .tools-stacks {
 	padding-bottom: 5rem;
 }
+
 .stacks {
 	min-height: 20rem;
 	margin: 0 1rem;
 }
+
+.tools-imgbox {
+	margin: 0.5rem 0.3rem;
+}
+
 .tools-img {
 	width: 6rem;
-	margin: 0.5rem 0.3rem;
 	filter: grayscale(100%) brightness(55%) sepia(50%) hue-rotate(-120deg) saturate(500%) contrast(1);
 }
 
@@ -177,7 +185,7 @@ h1 ~ p {
 }
 
 .tools-2 {
-	filter: invert(30%) sepia(66%) saturate(1376%) hue-rotate(265deg) brightness(60%) contrast(90%);
+	filter: invert(30%) sepia(66%) saturate(1376%) hue-rotate(265deg) brightness(50%) contrast(60%);
 }
 
 .tools-img:hover {
@@ -190,7 +198,7 @@ h1 ~ p {
 	background-color: #9d3ba2;
 }
 .card-deck {
-	margin: 8rem 0;
+	margin: 8rem 0 4rem;
 }
 
 .card {
@@ -301,6 +309,27 @@ input[placeholder] {
 	color: white;
 	background: linear-gradient(-35deg, #2f21ad, #e04b9c);
 	border: 1px solid white;
+}
+
+.wave-5 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-5 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+}
+
+.wave-5 .shape-fill {
+    fill: #32243d;
 }
 
 /*----------------Footer Section--------------*/
